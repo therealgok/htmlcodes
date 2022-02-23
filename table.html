@@ -3,39 +3,53 @@
         <title>table</title>
         <style>
             table{
-                font-family: 'Times New Roman', Times, serif;
-                border-collapse: collapse;
                 width: 100%;
+            border-collapse: collapse;
+              
+                border: 1px solid black;
+                
             }
-            td, th{
-                border: 2px solid black;
-                text-align: center;
-                color: black;
-                padding: 5px;
+            th, td{
+                 border: 2px solid black;  
+                 padding-right: 10px;
+            }
+             td:hover{
+                background-color: rgb(216, 228, 228);
+            }
+            th:hover{
+                background-color: rgb(243, 212, 221);
             }
         </style>
     </head>
     <body>
         <h1>html table</h1>
-        <table>
+        <table >
+            <caption><strong> my first table</strong></caption>
+            <colgroup>
+            <col span="2" style="background-color: rgb(170, 235, 110);">
+            <col span="2" style="background-color: rgb(235, 191, 110);">
+            </colgroup>
             <tr>
-               <th>name</th>
-               <th>age</th>
-               <th>place</th>
+               <th colspan="2">name,age</th>
+               <th colspan="2">g,place</th>
+               
             </tr>
             <tr>
                 <td>goku</td>
                 <td>10</td>
+                <td>m</td>
                 <td>manila</td>
             </tr>
             <tr>
                 <td>sara</td>
                 <td>15</td>
+                <td>f</td>
                 <td>erangel</td>
             </tr>
             <tr>
                 <td>anna</td>
                 <td>14</td>
+                <td>f</td>
                 <td>sanhok</td>
             </tr>
         </table>
